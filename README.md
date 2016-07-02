@@ -1,4 +1,4 @@
-# This repo is a simple example example using the Start Bootstrap Simple Sidebar. When selecting an element from the menu, the element name is printed to the screen.  For more information on the Simple Sidebar please see the original README below. 
+This repo is a simple example example using the Start Bootstrap Simple Sidebar. When selecting an element from the menu, the element name is printed to the screen.  For more information on the Simple Sidebar please see the original README below. 
 
 
 # [Start Bootstrap](http://startbootstrap.com/) - [Simple Sidebar](http://startbootstrap.com/template-overviews/simple-sidebar/)

@@ -5,7 +5,7 @@
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, shrink-to-fit=no, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
 
@@ -39,25 +39,25 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#">Dashboard</a>
+                    <a href="#" id="Dashboard" class="active">Dashboard</a>
                 </li>
                 <li>
-                    <a href="#">Shortcuts</a>
+                    <a href="#" id="Shortcuts" class="inactive">Shortcuts</a>
                 </li>
                 <li>
-                    <a href="#">Overview</a>
+                    <a href="#" id="Overview" class="inactive">Overview</a>
                 </li>
                 <li>
-                    <a href="#">Events</a>
+                    <a href="#" id="Events" class="inactive">Events</a>
                 </li>
                 <li>
-                    <a href="#">About</a>
+                    <a href="#" id="About" class="inactive">About</a>
                 </li>
                 <li>
-                    <a href="#">Services</a>
+                    <a href="#" id="Services" class="inactive">Services</a>
                 </li>
                 <li>
-                    <a href="#">Contact</a>
+                    <a href="#" id="Contact" class="inactive">Contact</a>
                 </li>
             </ul>
         </div>
@@ -72,6 +72,9 @@
                         <p>This template has a responsive menu toggling system. The menu will appear collapsed on smaller screens, and will appear non-collapsed on larger screens. When toggled using the button below, the menu will appear/disappear. On small screens, the page content will be pushed off canvas.</p>
                         <p>Make sure to keep all page content within the <code>#page-content-wrapper</code>.</p>
                         <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>
+                        </p>
+                        </p>
+                        <div id="menu-output"></div>
                     </div>
                 </div>
             </div>
@@ -93,6 +96,16 @@
         e.preventDefault();
         $("#wrapper").toggleClass("toggled");
     });
+
+    //Toggle Class of Selected List element
+    // And display selected element
+    $('#sidebar-wrapper li').not('.sidebar-brand').click(function () {
+    $('#sidebar-wrapper li').not(this).removeClass('active');
+    $(this).addClass('active');
+    $('#menu-output').text('Selected List Element: '+ $(this).text());
+    });
+
+      
     </script>
 
 </body>

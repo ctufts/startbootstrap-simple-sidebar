@@ -34,30 +34,30 @@
         <div id="sidebar-wrapper">
             <ul class="sidebar-nav">
                 <li class="sidebar-brand">
-                    <a href="#">
+                    
                         Start Bootstrap
-                    </a>
+                    
                 </li>
-                <li>
-                    <a href="#" id="Dashboard" class="active">Dashboard</a>
+                <li class="active">
+                    <a href="#" id="Dashboard" >Dashboard</a>
                 </li>
-                <li>
-                    <a href="#" id="Shortcuts" class="inactive">Shortcuts</a>
+                <li class="inactive">
+                    <a href="#" id="Shortcuts" >Shortcuts</a>
                 </li>
-                <li>
-                    <a href="#" id="Overview" class="inactive">Overview</a>
+                <li class="inactive">
+                    <a href="#" id="Overview" >Overview</a>
                 </li>
-                <li>
+                <li class="inactive">
                     <a href="#" id="Events" class="inactive">Events</a>
                 </li>
-                <li>
-                    <a href="#" id="About" class="inactive">About</a>
+                <li class="inactive">
+                    <a href="#" id="About" >About</a>
                 </li>
-                <li>
-                    <a href="#" id="Services" class="inactive">Services</a>
+                <li class="inactive">
+                    <a href="#" id="Services" >Services</a>
                 </li>
-                <li>
-                    <a href="#" id="Contact" class="inactive">Contact</a>
+                <li class="inactive">
+                    <a href="#" id="Contact" >Contact</a>
                 </li>
             </ul>
         </div>
@@ -99,8 +99,8 @@
 
     //Toggle Class of Selected List element
     // And display selected element
-    $('#sidebar-wrapper li').not('.sidebar-brand').click(function () {
-    $('#sidebar-wrapper li').not(this).removeClass('active');
+    $('#sidebar-wrapper a').click(function () {
+    $('#sidebar-wrapper a').not(this).removeClass('active');
     $(this).addClass('active');
     $('#menu-output').text('Selected List Element: '+ $(this).text());
     });
